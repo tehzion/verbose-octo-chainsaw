@@ -41,7 +41,8 @@ export const TruthCard = ({ card, onShare, className }: TruthCardProps) => {
     };
 
     const encoded = btoa(JSON.stringify(shareData));
-    const shareUrl = `${window.location.origin}/share/${encoded}`;
+    const productionUrl = 'https://vaccine-hunter-two.vercel.app';
+    const shareUrl = `${productionUrl}/share/${encoded}`;
 
     await navigator.clipboard.writeText(shareUrl);
     setCopied(true);
@@ -58,14 +59,14 @@ export const TruthCard = ({ card, onShare, className }: TruthCardProps) => {
       {/* Content */}
       <div className="relative z-10">
         {/* Header */}
-        <div className="flex items-center gap-2 mb-4">
-          <Shield className="w-5 h-5" />
-          <span className="text-sm font-semibold uppercase tracking-wide">Truth Card</span>
+        <div className="flex items-center gap-2 mb-2 sm:mb-4">
+          <Shield className="w-4 h-4 sm:w-5 sm:h-5" />
+          <span className="text-xs sm:text-sm font-semibold uppercase tracking-wide">Truth Card</span>
         </div>
 
         {/* Verdict badge */}
         <div className={cn(
-          "inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-semibold mb-4",
+          "inline-flex items-center gap-2 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-semibold mb-2 sm:mb-4",
           verdictInfo.color
         )}>
           <span>{verdictInfo.icon}</span>
@@ -73,27 +74,27 @@ export const TruthCard = ({ card, onShare, className }: TruthCardProps) => {
         </div>
 
         {/* Claim with decorative quotes */}
-        <div className="relative mb-4">
-          <span className="absolute -left-1 -top-2 text-4xl text-primary-foreground/20 font-serif">"</span>
-          <blockquote className="text-base sm:text-lg font-medium italic pl-4 pr-2 py-2 
+        <div className="relative mb-2 sm:mb-4">
+          <span className="absolute -left-1 -top-2 text-3xl sm:text-4xl text-primary-foreground/20 font-serif">"</span>
+          <blockquote className="text-sm sm:text-lg font-medium italic pl-3 sm:pl-4 pr-2 py-1.5 sm:py-2 
                                  bg-primary-foreground/5 border-l-2 border-primary-foreground/30 rounded-r">
             {card.claim}
           </blockquote>
-          <span className="absolute -right-1 bottom-0 text-4xl text-primary-foreground/20 font-serif">"</span>
+          <span className="absolute -right-1 bottom-0 text-3xl sm:text-4xl text-primary-foreground/20 font-serif">"</span>
         </div>
 
         {/* AI Answer - Full Response */}
-        <div className="mb-4">
-          <p className="text-xs uppercase tracking-wide mb-2 opacity-70 font-semibold">Answer:</p>
-          <p className="text-xs sm:text-sm opacity-90 leading-relaxed whitespace-pre-wrap">
+        <div className="mb-3 sm:mb-4">
+          <p className="text-xs uppercase tracking-wide mb-1.5 sm:mb-2 opacity-70 font-semibold">Answer:</p>
+          <p className="text-sm sm:text-base opacity-90 leading-relaxed whitespace-pre-wrap">
             {card.explanation}
           </p>
         </div>
 
         {/* Sources - Redesigned as cards */}
-        <div className="border-t border-primary-foreground/20 pt-4 mb-4">
-          <p className="text-xs uppercase tracking-wide mb-3 opacity-70 font-semibold">Verified Sources</p>
-          <div className="space-y-2">
+        <div className="border-t border-primary-foreground/20 pt-3 sm:pt-4 mb-3 sm:mb-4">
+          <p className="text-xs uppercase tracking-wide mb-2 sm:mb-3 opacity-70 font-semibold">Verified Sources</p>
+          <div className="space-y-1.5 sm:space-y-2">
             {card.sources.map((source) => (
               <a
                 key={source.id}

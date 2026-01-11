@@ -34,7 +34,7 @@ const ModeCards = ({ selectedAvatar, onSelect, onClose }: Omit<ModeSelectorProps
         {BOT_AVATARS.map((avatar) => {
           const isSelected = selectedAvatar.id === avatar.id;
           const IconComponent = getModeIcon(avatar.icon);
-          
+
           return (
             <button
               key={avatar.id}
@@ -53,7 +53,7 @@ const ModeCards = ({ selectedAvatar, onSelect, onClose }: Omit<ModeSelectorProps
                   <Check className="w-4 h-4 text-primary-foreground" />
                 </div>
               )}
-              
+
               {/* Avatar icon */}
               <div className={cn(
                 "w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-br flex items-center justify-center shadow-lg mb-4",
@@ -63,17 +63,17 @@ const ModeCards = ({ selectedAvatar, onSelect, onClose }: Omit<ModeSelectorProps
               )}>
                 <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
               </div>
-              
+
               {/* Name */}
               <h3 className="text-base sm:text-lg font-semibold text-foreground mb-1">
                 {avatar.name}
               </h3>
-              
+
               {/* Description */}
               <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                 {avatar.description}
               </p>
-              
+
               {/* Mode type badge */}
               <div className={cn(
                 "mt-3 px-3 py-1 rounded-full text-xs font-medium",
@@ -87,7 +87,7 @@ const ModeCards = ({ selectedAvatar, onSelect, onClose }: Omit<ModeSelectorProps
           );
         })}
       </div>
-      
+
       {/* Footer note */}
       <p className="text-xs text-center text-muted-foreground">
         All assistants are powered by verified health sources. You can switch anytime.

@@ -47,7 +47,7 @@ export const BadgeDisplay = ({ badges, unlockedBadgeIds, className }: BadgeDispl
           </button>
         </div>
 
-        <div className="grid grid-cols-4 gap-3">
+        <div className="grid grid-cols-3 gap-2">
           {badges.slice(0, 8).map((badge) => {
             const isUnlocked = unlockedBadgeIds.includes(badge.id);
 

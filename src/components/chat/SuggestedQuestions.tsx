@@ -121,7 +121,7 @@ export const SuggestedQuestions = ({ onSelect, avatarId }: SuggestedQuestionsPro
       </div>
 
       {/* Interactive question cards */}
-      <div className="flex gap-3 overflow-x-auto pt-4 pb-3 sm:pb-0 sm:flex-wrap scrollbar-hide snap-x snap-mandatory -mx-1 px-1">
+      <div className="flex gap-3 overflow-x-auto pb-3 sm:pb-0 sm:flex-wrap scrollbar-hide snap-x snap-mandatory -mx-3 px-3 sm:mx-0 sm:px-0">
         {questions.map((item, index) => {
           const IconComponent = item.icon;
           return (

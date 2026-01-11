@@ -258,17 +258,18 @@ const Index = () => {
   };
 
   const handleShareApp = () => {
+    const productionUrl = 'https://vaccine-hunter-two.vercel.app/';
     if (navigator.share) {
       navigator.share({
-        title: 'Vaccine Hunter',
-        text: 'Check out this health assistant app!',
-        url: window.location.href,
+        title: 'Vaccine Hunter - Fight Misinformation with Facts',
+        text: 'Check out this AI health assistant that helps separate vaccine facts from fiction using trusted sources!',
+        url: productionUrl,
       }).then(() => {
         awardXP('truth_card_shared', 'Shared the app');
         toast.success('Thanks for sharing!');
       }).catch(console.error);
     } else {
-      navigator.clipboard.writeText(window.location.href);
+      navigator.clipboard.writeText(productionUrl);
       awardXP('truth_card_shared', 'Shared the app');
       toast.success('Link copied to clipboard!');
     }
@@ -360,13 +361,13 @@ const Index = () => {
           <div className="flex-1 overflow-y-auto scroll-smooth">
             <div className="min-h-full flex flex-col">
               {messages.length === 0 ? (
-                <div className="flex-1 flex flex-col px-4 md:px-6">
+                <div className="flex-1 flex flex-col px-3 sm:px-4 md:px-6">
                   <WelcomeScreen
                     currentAvatar={selectedAvatar}
                     allAvatars={avatars}
                     onAvatarClick={(avatar) => handleModeChange(avatar.id)}
                   />
-                  <div className="mt-auto pb-60 md:pb-96 max-w-3xl mx-auto w-full">
+                  <div className="mt-auto pb-44 sm:pb-52 md:pb-64 max-w-3xl mx-auto w-full">
                     <SuggestedQuestions
                       onSelect={handleSendMessage}
                       avatarId={selectedAvatar.id}
@@ -374,7 +375,7 @@ const Index = () => {
                   </div>
                 </div>
               ) : (
-                <div className="flex-1 pb-60 md:pb-96 px-4 md:px-8"> {/* Responsive padding for floating input + side spacing */}
+                <div className="flex-1 pb-44 sm:pb-52 md:pb-64 px-3 sm:px-4 md:px-8 space-y-4 sm:space-y-6"> {/* Responsive padding for floating input + side spacing */}
                   {messages.map((message) => (
                     <ChatMessage
                       key={message.id}
@@ -387,7 +388,7 @@ const Index = () => {
 
                   {/* Show suggestions at the start of chat (when only greeting exists) */}
                   {messages.length === 1 && messages[0].role === 'assistant' && (
-                    <div className="max-w-3xl mx-auto w-full px-4 mt-6 animate-fade-in">
+                    <div className="max-w-3xl mx-auto w-full px-3 sm:px-4 mt-4 sm:mt-6 animate-fade-in">
                       <SuggestedQuestions
                         onSelect={handleSendMessage}
                         avatarId={selectedAvatar.id}
@@ -421,7 +422,7 @@ const Index = () => {
       {/* Truth Card Modal */}
       {showTruthCard && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-sm animate-fade-in"
+          className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/60 backdrop-blur-sm animate-fade-in overflow-y-auto"
           onClick={(e) => {
             const target = e.target as HTMLElement;
             if (target.closest('[data-radix-popper-content-wrapper]')) return;
@@ -429,7 +430,7 @@ const Index = () => {
           }}
         >
           <div
-            className="max-w-md w-full animate-scale-in"
+            className="max-w-md w-full my-auto animate-scale-in max-h-[95vh] overflow-y-auto"
             onClick={e => e.stopPropagation()}
           >
             <TruthCard

@@ -24,9 +24,9 @@ There is no scientific link between vaccines and autism. Here are the key facts:
 
 Would you like me to explain more about how these studies were conducted, or do you have questions about a specific vaccine?`,
     sources: [
-      { id: 's1', name: 'CDC - Vaccine Safety', url: 'https://www.cdc.gov/vaccinesafety/concerns/autism.html', type: 'CDC', relevanceScore: 0.98, excerpt: 'CDC has conducted or funded many studies finding no link between vaccines and autism.' },
-      { id: 's2', name: 'NHS - MMR Vaccine', url: 'https://www.nhs.uk/conditions/vaccinations/mmr-vaccine/', type: 'NHS', relevanceScore: 0.95, excerpt: 'There is no evidence of a link between the MMR vaccine and autism.' },
-      { id: 's3', name: 'WHO - Vaccines Q&A', url: 'https://www.who.int/news-room/q-a-detail/vaccines-and-immunization-what-is-vaccination', type: 'WHO', relevanceScore: 0.92, excerpt: 'Vaccines are safe and side effects are usually minor, such as a sore arm.' },
+      { id: 's1', name: 'NHS - MMR Vaccine', url: 'https://www.nhs.uk/conditions/vaccinations/mmr-vaccine/', type: 'NHS', relevanceScore: 0.98, excerpt: 'There is no evidence of a link between the MMR vaccine and autism.' },
+      { id: 's2', name: 'WHO - Vaccines Safety', url: 'https://www.who.int/news-room/questions-and-answers/item/vaccines-and-immunization-vaccine-safety', type: 'WHO', relevanceScore: 0.96, excerpt: 'Vaccines are safe. Any licensed vaccine is rigorously tested across multiple phases of trials.' },
+      { id: 's3', name: 'CDC - Vaccines Main', url: 'https://www.cdc.gov/vaccines/', type: 'CDC', relevanceScore: 0.95, excerpt: 'CDC provides trusted vaccine information, safety data, and immunization schedules.' },
     ],
     followUpQuestions: [
       'How was the original autism study debunked?',
@@ -52,8 +52,8 @@ Vaccine ingredients are carefully selected and tested for safety. Here's what th
 
 Every ingredient is present in very small amounts and has been extensively studied for safety. Would you like to know more about any specific ingredient?`,
     sources: [
-      { id: 's4', name: 'CDC - Vaccine Ingredients', url: 'https://www.cdc.gov/vaccines/vac-gen/additives.htm', type: 'CDC', relevanceScore: 0.97, excerpt: 'Vaccine ingredients include antigens, adjuvants, preservatives, and stabilizers—all in very small, safe amounts.' },
-      { id: 's5', name: 'NHS - Vaccine Ingredients', url: 'https://www.nhs.uk/conditions/vaccinations/vaccine-ingredients/', type: 'NHS', relevanceScore: 0.94, excerpt: 'The main ingredient of any vaccine is a small amount of bacteria, virus or toxin that has been weakened or destroyed.' },
+      { id: 's4', name: 'NHS - Vaccine Ingredients', url: 'https://www.nhs.uk/vaccinations/vaccine-ingredients/', type: 'NHS', relevanceScore: 0.97, excerpt: 'The main ingredient of any vaccine is a small amount of bacteria, virus or toxin that has been weakened or destroyed.' },
+      { id: 's5', name: 'WHO - Vaccine Safety Q&A', url: 'https://www.who.int/news-room/questions-and-answers/item/vaccines-and-immunization-vaccine-safety', type: 'WHO', relevanceScore: 0.95, excerpt: 'All vaccine ingredients are tested for safety and must meet strict regulatory standards.' },
     ],
     followUpQuestions: [
       'Is aluminum in vaccines safe?',
@@ -81,8 +81,8 @@ The vaccines went through all three phases of clinical trials. Safety monitoring
 
 Would you like to know more about mRNA technology or how vaccine safety is monitored?`,
     sources: [
-      { id: 's6', name: 'CDC - COVID-19 Vaccines', url: 'https://www.cdc.gov/coronavirus/2019-ncov/vaccines/different-vaccines.html', type: 'CDC', relevanceScore: 0.96, excerpt: 'COVID-19 vaccines were developed quickly without skipping any steps required to meet safety standards.' },
-      { id: 's7', name: 'WHO - COVID Vaccine Development', url: 'https://www.who.int/news-room/feature-stories/detail/the-race-for-a-covid-19-vaccine-explained', type: 'WHO', relevanceScore: 0.93, excerpt: 'The speed of vaccine development was due to unprecedented funding, collaboration, and running phases in parallel.' },
+      { id: 's6', name: 'WHO - COVID-19 Vaccines', url: 'https://www.who.int/emergencies/diseases/novel-coronavirus-2019/covid-19-vaccines', type: 'WHO', relevanceScore: 0.97, excerpt: 'COVID-19 vaccines were developed quickly through unprecedented collaboration without skipping safety steps.' },
+      { id: 's7', name: 'NHS - COVID Vaccines', url: 'https://www.nhs.uk/vaccinations/covid-19-vaccine/', type: 'NHS', relevanceScore: 0.95, excerpt: 'The COVID-19 vaccines went through all the usual testing and approval processes.' },
     ],
     followUpQuestions: [
       'How does mRNA technology work?',
@@ -109,8 +109,8 @@ Serious side effects are rare but can occur:
 
 The benefits of vaccination significantly outweigh the risks for the vast majority of people. If you have specific health conditions, discussing with your doctor can help determine what's right for you.`,
     sources: [
-      { id: 's8', name: 'CDC - Side Effects', url: 'https://www.cdc.gov/vaccines/vac-gen/side-effects.htm', type: 'CDC', relevanceScore: 0.96, excerpt: 'Most side effects are mild: soreness, fatigue, and low-grade fever. Serious reactions are rare.' },
-      { id: 's9', name: 'NHS - Side Effects', url: 'https://www.nhs.uk/conditions/vaccinations/side-effects/', type: 'NHS', relevanceScore: 0.94, excerpt: 'Common side effects last a day or two. Serious side effects are very rare.' },
+      { id: 's8', name: 'NHS - Side Effects', url: 'https://www.nhs.uk/vaccinations/side-effects/', type: 'NHS', relevanceScore: 0.97, excerpt: 'Common side effects last a day or two. Serious side effects are very rare.' },
+      { id: 's9', name: 'WHO - Vaccine Safety', url: 'https://www.who.int/news-room/questions-and-answers/item/vaccines-and-immunization-vaccine-safety', type: 'WHO', relevanceScore: 0.95, excerpt: 'Vaccines are safe. Serious side effects are rare and carefully monitored.' },
     ],
     followUpQuestions: [
       'What should I do if I have a reaction?',
@@ -134,8 +134,8 @@ Herd immunity (or community immunity) occurs when enough people are immune to a 
 
 Without sufficient vaccination rates, outbreaks can occur even in developed countries. We've seen this with measles outbreaks in communities with lower vaccination rates.`,
     sources: [
-      { id: 's10', name: 'WHO - Herd Immunity', url: 'https://www.who.int/news-room/q-a-detail/herd-immunity-lockdowns-and-covid-19', type: 'WHO', relevanceScore: 0.95, excerpt: 'Herd immunity is achieved when a sufficient proportion of a population is immune, reducing spread.' },
-      { id: 's11', name: 'CDC - Community Immunity', url: 'https://www.cdc.gov/vaccines/hcp/conversations/understanding-vacc-work.html', type: 'CDC', relevanceScore: 0.92, excerpt: 'Community immunity protects those who cannot be vaccinated by surrounding them with immune individuals.' },
+      { id: 's10', name: 'WHO - Herd Immunity', url: 'https://www.who.int/news-room/questions-and-answers/item/herd-immunity-lockdowns-and-covid-19', type: 'WHO', relevanceScore: 0.97, excerpt: 'Herd immunity is achieved when a sufficient proportion of a population is immune, reducing spread.' },
+      { id: 's11', name: 'NHS - Why Vaccination', url: 'https://www.nhs.uk/vaccinations/why-vaccination-is-important/', type: 'NHS', relevanceScore: 0.94, excerpt: 'Vaccination is the most important way to protect yourself and those around you from disease.' },
     ],
     followUpQuestions: [
       'What percentage is needed for herd immunity?',
@@ -161,8 +161,8 @@ The childhood vaccine schedule is carefully designed based on decades of researc
 
 If you have concerns, talk to your pediatrician. They can discuss your specific situation and address any worries you might have.`,
     sources: [
-      { id: 's12', name: 'CDC - Child Schedule', url: 'https://www.cdc.gov/vaccines/schedules/hcp/imz/child-adolescent.html', type: 'CDC', relevanceScore: 0.97, excerpt: 'The immunization schedule is designed to protect children when they are most vulnerable to diseases.' },
-      { id: 's13', name: 'NHS - Vaccination Schedule', url: 'https://www.nhs.uk/conditions/vaccinations/nhs-vaccinations-and-when-to-have-them/', type: 'NHS', relevanceScore: 0.95, excerpt: 'The NHS vaccination schedule shows which vaccines your child needs and when they should have them.' },
+      { id: 's12', name: 'NHS - Vaccination Schedule', url: 'https://www.nhs.uk/vaccinations/nhs-vaccinations-and-when-to-have-them/', type: 'NHS', relevanceScore: 0.98, excerpt: 'The NHS vaccination schedule shows which vaccines your child needs and when they should have them.' },
+      { id: 's13', name: 'WHO - Immunization Schedules', url: 'https://www.who.int/teams/immunization-vaccines-and-biologicals/policies/who-recommendations-for-routine-immunization', type: 'WHO', relevanceScore: 0.95, excerpt: 'WHO provides global guidance on immunization schedules based on scientific evidence.' },
     ],
     followUpQuestions: [
       'Can vaccines be spread out?',
@@ -192,8 +192,8 @@ The claim linking MMR to autism has been thoroughly investigated and disproven:
 
 Measles can cause serious complications including brain damage and death. The vaccine is much safer than the disease.`,
     sources: [
-      { id: 's14', name: 'CDC - MMR Vaccine', url: 'https://www.cdc.gov/vaccines/hcp/vis/vis-statements/mmr.html', type: 'CDC', relevanceScore: 0.97, excerpt: 'MMR vaccine protects against measles, mumps, and rubella with two doses for lasting immunity.' },
-      { id: 's15', name: 'NHS - MMR Vaccine', url: 'https://www.nhs.uk/conditions/vaccinations/mmr-vaccine/', type: 'NHS', relevanceScore: 0.96, excerpt: 'The MMR vaccine is a safe and effective combined vaccine that protects against 3 separate illnesses.' },
+      { id: 's14', name: 'NHS - MMR Vaccine', url: 'https://www.nhs.uk/conditions/vaccinations/mmr-vaccine/', type: 'NHS', relevanceScore: 0.98, excerpt: 'The MMR vaccine is a safe and effective combined vaccine that protects against 3 separate illnesses.' },
+      { id: 's15', name: 'WHO - Measles Vaccine', url: 'https://www.who.int/news-room/fact-sheets/detail/measles', type: 'WHO', relevanceScore: 0.95, excerpt: 'The measles vaccine has a strong safety record and is highly effective.' },
     ],
     followUpQuestions: [
       'What are the symptoms of measles?',
