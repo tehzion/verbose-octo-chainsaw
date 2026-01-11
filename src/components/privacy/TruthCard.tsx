@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { toast } from 'sonner';
+import LZString from 'lz-string';
 
 interface TruthCardProps {
   card: TruthCardType;
@@ -40,9 +41,10 @@ export const TruthCard = ({ card, onShare, className }: TruthCardProps) => {
       sources: card.sources.map(s => ({ id: s.id, name: s.name, url: s.url, type: s.type, excerpt: s.excerpt })),
     };
 
-    const encoded = btoa(JSON.stringify(shareData));
+    // Compress and encode for much shorter URLs (50-70% reduction)
+    const compressed = LZString.compressToEncodedURIComponent(JSON.stringify(shareData));
     const productionUrl = 'https://vaccine-hunter-two.vercel.app';
-    const shareUrl = `${productionUrl}/share/${encoded}`;
+    const shareUrl = `${productionUrl}/share/${compressed}`;
 
     await navigator.clipboard.writeText(shareUrl);
     setCopied(true);

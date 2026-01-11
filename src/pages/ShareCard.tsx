@@ -4,17 +4,29 @@ import { TruthCard as TruthCardType } from '@/types/chat';
 import { Shield, Home } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useMemo } from 'react';
+import LZString from 'lz-string';
 
 const ShareCard = () => {
   const { cardData } = useParams<{ cardData: string }>();
 
   const card = useMemo<TruthCardType | null>(() => {
     if (!cardData) return null;
-    
+
     try {
-      const decoded = atob(cardData);
-      const parsed = JSON.parse(decoded);
-      
+      let parsed;
+
+      // Try compressed format first (new)
+      try {
+        const decompressed = LZString.decompressFromEncodedURIComponent(cardData);
+        if (decompressed) {
+          parsed = JSON.parse(decompressed);
+        }
+      } catch {
+        // Fall back to old base64 format for backward compatibility
+        const decoded = atob(cardData);
+        parsed = JSON.parse(decoded);
+      }
+
       return {
         id: 'shared-card',
         title: 'Shared Truth Card',
