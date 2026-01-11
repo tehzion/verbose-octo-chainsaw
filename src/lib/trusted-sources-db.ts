@@ -60,7 +60,7 @@ export const TRUSTED_SOURCES_DB: TrustedSourceEntry[] = [
   {
     id: 'nhs-mmr-vaccine',
     name: 'NHS MMR Vaccine',
-    url: 'https://www.nhs.uk/vaccinations/mmr-vaccine/',
+    url: 'https://www.nhs.uk/conditions/vaccinations/mmr-vaccine/',
     type: 'NHS',
     keywords: ['mmr', 'measles', 'mumps', 'rubella', 'children', 'safety'],
     excerpt: 'The MMR vaccine is a safe and effective combined vaccine that protects against measles, mumps and rubella.',
@@ -89,7 +89,7 @@ export const TRUSTED_SOURCES_DB: TrustedSourceEntry[] = [
   {
     id: 'nhs-covid-vaccine',
     name: 'NHS COVID-19 Vaccination',
-    url: 'https://www.nhs.uk/vaccinations/covid-19-vaccines/',
+    url: 'https://www.nhs.uk/conditions/covid-19/covid-19-vaccination/',
     type: 'NHS',
     keywords: ['covid', 'coronavirus', 'booster', 'nhs', 'uk', 'vaccination'],
     excerpt: 'Find out about COVID-19 vaccines, including who can get them, how to book and what to expect.',

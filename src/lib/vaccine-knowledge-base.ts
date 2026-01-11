@@ -52,7 +52,7 @@ Vaccine ingredients are carefully selected and tested for safety. Here's what th
 
 Every ingredient is present in very small amounts and has been extensively studied for safety. Would you like to know more about any specific ingredient?`,
     sources: [
-      { id: 's4', name: 'NHS - Vaccine Ingredients', url: 'https://www.nhs.uk/vaccinations/vaccine-ingredients/', type: 'NHS', relevanceScore: 0.97, excerpt: 'The main ingredient of any vaccine is a small amount of bacteria, virus or toxin that has been weakened or destroyed.' },
+      { id: 's4', name: 'NHS - Vaccine Ingredients', url: 'https://www.nhs.uk/conditions/vaccinations/vaccine-ingredients/', type: 'NHS', relevanceScore: 0.97, excerpt: 'The main ingredient of any vaccine is a small amount of bacteria, virus or toxin that has been weakened or destroyed.' },
       { id: 's5', name: 'WHO - Vaccine Safety Q&A', url: 'https://www.who.int/news-room/questions-and-answers/item/vaccines-and-immunization-vaccine-safety', type: 'WHO', relevanceScore: 0.95, excerpt: 'All vaccine ingredients are tested for safety and must meet strict regulatory standards.' },
     ],
     followUpQuestions: [
@@ -82,7 +82,7 @@ The vaccines went through all three phases of clinical trials. Safety monitoring
 Would you like to know more about mRNA technology or how vaccine safety is monitored?`,
     sources: [
       { id: 's6', name: 'WHO - COVID-19 Vaccines', url: 'https://www.who.int/emergencies/diseases/novel-coronavirus-2019/covid-19-vaccines', type: 'WHO', relevanceScore: 0.97, excerpt: 'COVID-19 vaccines were developed quickly through unprecedented collaboration without skipping safety steps.' },
-      { id: 's7', name: 'NHS - COVID Vaccines', url: 'https://www.nhs.uk/vaccinations/covid-19-vaccine/', type: 'NHS', relevanceScore: 0.95, excerpt: 'The COVID-19 vaccines went through all the usual testing and approval processes.' },
+      { id: 's7', name: 'NHS - COVID Vaccines', url: 'https://www.nhs.uk/conditions/covid-19/covid-19-vaccination/', type: 'NHS', relevanceScore: 0.95, excerpt: 'The COVID-19 vaccines went through all the usual testing and approval processes.' },
     ],
     followUpQuestions: [
       'How does mRNA technology work?',
@@ -109,7 +109,7 @@ Serious side effects are rare but can occur:
 
 The benefits of vaccination significantly outweigh the risks for the vast majority of people. If you have specific health conditions, discussing with your doctor can help determine what's right for you.`,
     sources: [
-      { id: 's8', name: 'NHS - Side Effects', url: 'https://www.nhs.uk/vaccinations/side-effects/', type: 'NHS', relevanceScore: 0.97, excerpt: 'Common side effects last a day or two. Serious side effects are very rare.' },
+      { id: 's8', name: 'NHS - Side Effects', url: 'https://www.nhs.uk/conditions/vaccinations/side-effects-and-safety/', type: 'NHS', relevanceScore: 0.97, excerpt: 'Common side effects last a day or two. Serious side effects are very rare.' },
       { id: 's9', name: 'WHO - Vaccine Safety', url: 'https://www.who.int/news-room/questions-and-answers/item/vaccines-and-immunization-vaccine-safety', type: 'WHO', relevanceScore: 0.95, excerpt: 'Vaccines are safe. Serious side effects are rare and carefully monitored.' },
     ],
     followUpQuestions: [
@@ -135,7 +135,7 @@ Herd immunity (or community immunity) occurs when enough people are immune to a 
 Without sufficient vaccination rates, outbreaks can occur even in developed countries. We've seen this with measles outbreaks in communities with lower vaccination rates.`,
     sources: [
       { id: 's10', name: 'WHO - Herd Immunity', url: 'https://www.who.int/news-room/questions-and-answers/item/herd-immunity-lockdowns-and-covid-19', type: 'WHO', relevanceScore: 0.97, excerpt: 'Herd immunity is achieved when a sufficient proportion of a population is immune, reducing spread.' },
-      { id: 's11', name: 'NHS - Why Vaccination', url: 'https://www.nhs.uk/vaccinations/why-vaccination-is-important/', type: 'NHS', relevanceScore: 0.94, excerpt: 'Vaccination is the most important way to protect yourself and those around you from disease.' },
+      { id: 's11', name: 'NHS - Why Vaccination', url: 'https://www.nhs.uk/conditions/vaccinations/why-vaccination-is-important-and-the-safest-way-to-protect-yourself/', type: 'NHS', relevanceScore: 0.94, excerpt: 'Vaccination is the most important way to protect yourself and those around you from disease.' },
     ],
     followUpQuestions: [
       'What percentage is needed for herd immunity?',
