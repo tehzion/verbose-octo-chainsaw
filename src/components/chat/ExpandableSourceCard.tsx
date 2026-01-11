@@ -44,27 +44,27 @@ export const ExpandableSourceCard = React.forwardRef<HTMLDivElement, ExpandableS
           rel="noopener noreferrer"
           onClick={handleClick}
           className={cn(
-            "flex items-center gap-3 p-3 rounded-lg border transition-all duration-200 cursor-pointer group",
+            "flex items-center gap-2 sm:gap-3 p-2 sm:p-3 rounded-lg border transition-all duration-200 cursor-pointer group",
             getSourceColor(source.type)
           )}
         >
-          <div className="shrink-0 w-8 h-8 rounded-md bg-current/10 flex items-center justify-center">
-            <SourceIcon className="w-4 h-4" />
+          <div className="shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-md bg-current/10 flex items-center justify-center">
+            <SourceIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
           </div>
           <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-2">
-              <span className="font-semibold text-sm">{source.name}</span>
-              <span className="text-[10px] px-1.5 py-0.5 rounded bg-current/10 uppercase tracking-wide font-medium">
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <span className="font-semibold text-xs sm:text-sm">{source.name}</span>
+              <span className="text-[9px] sm:text-[10px] px-1 sm:px-1.5 py-0.5 rounded bg-current/10 uppercase tracking-wide font-medium">
                 {source.type}
               </span>
             </div>
             {source.excerpt && (
-              <p className="mt-1 text-xs opacity-75 line-clamp-2 leading-relaxed">
+              <p className="mt-0.5 sm:mt-1 text-[11px] sm:text-xs opacity-75 line-clamp-2 leading-relaxed">
                 "{source.excerpt}"
               </p>
             )}
           </div>
-          <ExternalLink className="w-4 h-4 opacity-50 group-hover:opacity-100 transition-opacity shrink-0" />
+          <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4 opacity-50 group-hover:opacity-100 transition-opacity shrink-0" />
         </a>
       </div>
     );
