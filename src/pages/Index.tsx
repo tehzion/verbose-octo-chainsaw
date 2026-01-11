@@ -430,12 +430,13 @@ const Index = () => {
           }}
         >
           <div
-            className="max-w-md w-full my-auto animate-scale-in max-h-[95vh] overflow-y-auto"
+            className="max-w-sm sm:max-w-md w-full my-auto animate-scale-in max-h-[95vh] overflow-y-auto"
             onClick={e => e.stopPropagation()}
           >
             <TruthCard
               card={showTruthCard}
               onShare={handleShareTruthCard}
+              onClose={() => setShowTruthCard(null)}
             />
           </div>
         </div>

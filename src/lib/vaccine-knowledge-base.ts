@@ -161,7 +161,7 @@ The childhood vaccine schedule is carefully designed based on decades of researc
 
 If you have concerns, talk to your pediatrician. They can discuss your specific situation and address any worries you might have.`,
     sources: [
-      { id: 's12', name: 'NHS - Vaccination Schedule', url: 'https://www.nhs.uk/vaccinations/nhs-vaccinations-and-when-to-have-them/', type: 'NHS', relevanceScore: 0.98, excerpt: 'The NHS vaccination schedule shows which vaccines your child needs and when they should have them.' },
+      { id: 's12', name: 'NHS - Vaccination Schedule', url: 'https://www.nhs.uk/conditions/vaccinations/nhs-vaccinations-and-when-to-have-them/', type: 'NHS', relevanceScore: 0.98, excerpt: 'The NHS vaccination schedule shows which vaccines your child needs and when they should have them.' },
       { id: 's13', name: 'WHO - Immunization Schedules', url: 'https://www.who.int/teams/immunization-vaccines-and-biologicals/policies/who-recommendations-for-routine-immunization', type: 'WHO', relevanceScore: 0.95, excerpt: 'WHO provides global guidance on immunization schedules based on scientific evidence.' },
     ],
     followUpQuestions: [

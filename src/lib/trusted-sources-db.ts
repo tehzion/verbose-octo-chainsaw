@@ -42,7 +42,7 @@ export const TRUSTED_SOURCES_DB: TrustedSourceEntry[] = [
   {
     id: 'nhs-vaccine-side-effects',
     name: 'NHS Vaccine Side Effects',
-    url: 'https://www.nhs.uk/vaccinations/side-effects/',
+    url: 'https://www.nhs.uk/conditions/vaccinations/side-effects-and-safety/',
     type: 'NHS',
     keywords: ['side effect', 'reaction', 'fever', 'pain', 'swelling', 'vaccine'],
     excerpt: 'Most side effects of vaccination are mild and short-lived, such as a sore arm or mild fever.',
@@ -118,7 +118,7 @@ export const TRUSTED_SOURCES_DB: TrustedSourceEntry[] = [
   {
     id: 'nhs-childhood-vaccines',
     name: 'NHS Childhood Vaccines',
-    url: 'https://www.nhs.uk/vaccinations/nhs-vaccinations-and-when-to-have-them/',
+    url: 'https://www.nhs.uk/conditions/vaccinations/nhs-vaccinations-and-when-to-have-them/',
     type: 'NHS',
     keywords: ['child', 'children', 'baby', 'schedule', 'nhs', 'uk', 'infant'],
     excerpt: 'Find out which vaccinations are routinely offered to everyone in the UK and when they should be given.',

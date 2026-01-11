@@ -10,6 +10,7 @@ import LZString from 'lz-string';
 interface TruthCardProps {
   card: TruthCardType;
   onShare?: () => void;
+  onClose?: () => void;
   className?: string;
 }
 
@@ -27,7 +28,7 @@ const getSourceIcon = (type: SourceReference['type']) => {
 };
 
 
-export const TruthCard = ({ card, onShare, className }: TruthCardProps) => {
+export const TruthCard = ({ card, onShare, onClose, className }: TruthCardProps) => {
   const { getVerdictInfo } = usePrivacy();
   const [copied, setCopied] = useState(false);
 
@@ -60,6 +61,20 @@ export const TruthCard = ({ card, onShare, className }: TruthCardProps) => {
 
       {/* Content */}
       <div className="relative z-10">
+        {/* Close button (only show if onClose is provided) */}
+        {onClose && (
+          <button
+            onClick={onClose}
+            className="absolute -top-2 -right-2 sm:top-2 sm:right-2 w-8 h-8 rounded-full bg-primary-foreground/20 hover:bg-primary-foreground/30 
+                     flex items-center justify-center transition-colors z-20 backdrop-blur-sm border border-primary-foreground/20"
+            aria-label="Close"
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        )}
+
         {/* Header */}
         <div className="flex items-center gap-2 mb-2 sm:mb-4">
           <Shield className="w-4 h-4 sm:w-5 sm:h-5" />
